@@ -1,59 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# LZNK Cakna Siber Escape Room : S.H.I.E.L.D.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+An interactive digital learning platform utilizing a virtual escape room concept, designed to test and train staff readiness against increasingly complex digital threats[cite: 3, 5]. This system serves as a tactical training ground to elevate cybersecurity awareness and transform Lembaga Zakat Negeri Kedah (LZNK) staff into the organization's frontline defense, or "human firewall"[cite: 3, 4, 5].
 
-## About Laravel
+## Tech Stack
+* **Framework:** Laravel 11[cite: 5]
+* **Languages:** PHP (Blade Views), JavaScript, HTML[cite: 5]
+* **Styling:** Tailwind CSS[cite: 5]
+* **Database:** MySQL Workbench 2.0[cite: 5]
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features & Modules
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 1. Core Modules (Modul Teras)
+A sequential series of simulation rooms where users analyze threats and make critical security decisions[cite: 4]:
+* **01 Jaring Phishing:** Analyze incoming emails to identify legitimate communications versus malicious phishing attempts[cite: 4].
+* **02 Pintu Brute Force:** Answer multiple-choice questions regarding password strength and database security[cite: 3, 4].
+* **03 Tembok Api Manusia:** Review intercepted social engineering attempts via SMS, WhatsApp, or phone calls and flag threats[cite: 3, 4].
+* **04 Web Cermin (Mirroring Web):** Visually inspect website interfaces and URLs to differentiate between official portals and fraudulent clones[cite: 3, 4].
+* **Mainframe S.H.I.E.L.D:** A rapid-fire, time-pressured final boss module where users must quickly verify cybersecurity statements to acquire the final decryption key[cite: 3, 4].
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 2. Extra Modules
+* **Hab Operasi Branching Game:** Dynamic, multi-phase scenarios (e.g., IoT infrastructure hacks, ransomware) where each user decision branches into different outcomes and consequences[cite: 3, 4].
+* **Arked Permainan Mini:** Gamified cybersecurity challenges including Cyber Chess, Falling Dominoes, Connect the Dots, Word Scramble, and Video ABCD analysis[cite: 3, 4].
 
-## Learning Laravel
+## System Access & Roles
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+The platform is divided into three primary access tiers:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Staff / Agent
+Users register or log in to the S.H.I.E.L.D secure portal to execute active operations[cite: 4]. Agents are given a set number of lives (e.g., 3 mistakes per module) and a time limit to neutralize threats[cite: 3, 4]. Successfully completing the core modules unlocks a downloadable achievement certificate[cite: 4].
 
-## Laravel Sponsors
+### Administrator
+Admins gain access to the Director Monitoring Dashboard (`/admin`) to oversee the organization's cyber readiness[cite: 3]. Features include:
+* **Intel Gallery Manager:** Upload and edit cybersecurity awareness posters[cite: 3].
+* **Module Configuration:** Add, edit, or delete questions, branching paths, and multimedia across all game modules[cite: 3].
+* **Performance Analytics:** Track total registered staff, view active players, and monitor completion rates through visual graphs (accuracy ratios, top operatives)[cite: 3].
+* **Data Export:** Generate and export detailed audit trails and performance summaries[cite: 3].
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Root / Developer
+Root users manage the backend infrastructure housed within the Laravel directories (`Models`, `Controllers`, `Database Migrations`, `Views`, and `Routes`)[cite: 5]. Root access allows for database seeding, structural application updates, and executing direct MySQL queries to manually grant Admin privileges (`UPDATE shield_db.users SET is_admin = 1`)[cite: 5].
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+*Prepared by Ahmad Hanif Bin Ahmarofi*[cite: 3, 4, 5]
