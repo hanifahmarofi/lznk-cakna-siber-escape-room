@@ -1,6 +1,6 @@
 # LZNK Cakna Siber Escape Room : S.H.I.E.L.D.
 
-An interactive digital learning platform utilizing a virtual escape room concept, designed to test and train staff readiness against increasingly complex digital threats[cite: 3, 5]. This system serves as a tactical training ground to elevate cybersecurity awareness and transform Lembaga Zakat Negeri Kedah (LZNK) staff into the organization's frontline defense, or "human firewall".
+An interactive digital learning platform utilizing a virtual escape room concept, designed to test and train staff readiness against increasingly complex digital threats. This system serves as a tactical training ground to elevate cybersecurity awareness and transform Lembaga Zakat Negeri Kedah (LZNK) staff into the organization's frontline defense, or "human firewall".
 
 ## Tech Stack
 * **Framework:** Laravel 11
@@ -37,7 +37,7 @@ Admins gain access to the Director Monitoring Dashboard (`/admin`) to oversee th
 * **Data Export:** Generate and export detailed audit trails and performance summaries.
 
 ### Root / Developer
-Root users manage the backend infrastructure housed within the Laravel directories (`Models`, `Controllers`, `Database Migrations`, `Views`, and `Routes`)[cite: 5]. Root access allows for database seeding, structural application updates, and executing direct MySQL queries to manually grant Admin privileges (`UPDATE shield_db.users SET is_admin = 1`).
+Root users manage the backend infrastructure housed within the Laravel directories (`Models`, `Controllers`, `Database Migrations`, `Views`, and `Routes`). Root access allows for database seeding, structural application updates, and executing direct MySQL queries to manually grant Admin privileges (`UPDATE shield_db.users SET is_admin = 1`).
 
 ---
 *Prepared by Ahmad Hanif Bin Ahmarofi*
